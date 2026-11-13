@@ -1,0 +1,34 @@
+/* Fondo general con un degradado sutil */
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Banner decorativo superior de la tarjeta */
+.profile-banner {
+    height: 130px;
+    background: linear-gradient(90deg, #0d6efd 0%, #0a2540 100%);
+}
+
+/* Contenedor para superponer la foto sobre el banner */
+.profile-img-container {
+    margin-top: -85px;
+    width: 170px;
+    height: 170px;
+}
+
+/* Ajuste de tu fotografía vertical */
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;         /* Evita que la foto se deforme o aplaste */
+    object-position: top;      /* Prioriza tu rostro en la parte superior */
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.04);
+}
